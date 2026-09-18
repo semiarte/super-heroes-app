@@ -10,18 +10,22 @@ export const CustomMenu = () => {
     }
 
     return (
-        <NavigationMenu>
+        <NavigationMenu className="py-5">
             <NavigationMenuList className="gap-4">
                 {/* Home */}
                 <NavigationMenuItem>
-                    <NavigationMenuLink className={cn(isActive('/') && 'bg-slate-200', 'rounded-md p-2')}>
-                        <Link to='/'>Home</Link>
+                    <NavigationMenuLink
+                        render={<Link to='/' />}
+                        className={cn(isActive('/') && 'bg-slate-200', 'rounded-md p-2')}>
+                        Home
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 {/* Search */}
                 <NavigationMenuItem>
-                    <NavigationMenuLink className={cn(isActive('/search') && 'bg-slate-200', 'rounded-md p-2')}>
-                        <Link to='/search'>Search heroes</Link>
+                    <NavigationMenuLink
+                        render={<Link to='/search' />}
+                        className={cn(isActive('/search') && 'bg-slate-200', 'rounded-md p-2')}>
+                        Search heroes
                     </NavigationMenuLink>
                 </NavigationMenuItem>
             </NavigationMenuList>
