@@ -56,7 +56,7 @@ export const HeroPage = () => {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Header Banner */}
-            <div className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
+            <div className="bg-linear-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
                 <div className="max-w-7xl mx-auto px-6 py-12">
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         <div className="relative">
